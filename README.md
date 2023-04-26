@@ -1,6 +1,6 @@
 Online shop implemented in Java (work in progress).
 
-For now customer can:
+At the moment, a user can:
 
 view the list of products;
 add a product to cart;
@@ -8,6 +8,7 @@ add a product to wishlist;
 add a product from wishlist to cart;
 get notify about a product that is getting out of stock;
 place an order;
+
 Admin can also:
 
 add products to the shop;
