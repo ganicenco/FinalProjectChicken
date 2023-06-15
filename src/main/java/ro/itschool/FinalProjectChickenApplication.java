@@ -9,10 +9,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableAutoConfiguration
 @EnableConfigurationProperties
-public class FinalProjectChickenApplication2 {
+public class FinalProjectChickenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FinalProjectChickenApplication2.class, args);
+		SpringApplication.run(FinalProjectChickenApplication.class, args);
 	}
 
 }
