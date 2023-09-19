@@ -15,8 +15,8 @@
 	<artifactId>FinalProjectChicken</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>Spring security</name>
-	<description>Spring security Project</description>
+	<name>Chicken Shop</name>
+	<description>Chicken Shop Project</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
