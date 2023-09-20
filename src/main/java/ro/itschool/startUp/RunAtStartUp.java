@@ -101,7 +101,7 @@ public class RunAtStartUp {
         cart.setProducts(getProducts());
 
         clientService.updateClient(client1);
-    } // lista de produse trebuie salvata pe client, dar nu ma lasa
+    }
 
     private List<Product> getProducts() {
         return productRepository.saveAll(List.of(
