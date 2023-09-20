@@ -7,9 +7,9 @@ public final class Constants {
     public static final String ROLE_USER = "ROLE_USER";
     public static final String REDIRECT_TO_CLIENTS = "redirect:/clients";
     public static final String CONTACT_MESSAGE = "/contact-message";
-    public static final String REDIRECT_TO_CONTACT ="redirect:/contact";
+    public static final String REDIRECT_TO_CONTACT = "redirect:/contact";
     public static final String CONTACT_PAGE = "contact";
-    public static final String REDIRECT_TO_WISHLIST ="redirect:/wishlist";
+    public static final String REDIRECT_TO_WISHLIST = "redirect:/wishlist";
     public static final String WISHLIST_PAGE = "wishlist";
     public static final String ORDER_SUCCESSFUL_PAGE = "order-successful";
     public static final String CART_PAGE = "cart";
@@ -20,6 +20,8 @@ public final class Constants {
     public static final String ORDER_LIST_PAGE = "order-list";
     public static final String ADD_PRODUCT_PAGE = "add-product";
     public static final String REGISTER_PAGE = "register";
+
+    public static final String REGISTER_FAILED = "register-failed";
     public static final String REGISTER_SUCCESS_PAGE = "register-success";
     public static final String ACTIVATION_PAGE = "activation";
     public static final String INVALID_TOKEN_PAGE = "invalid-token";

@@ -11,11 +11,11 @@ import ro.itschool.entity.Client;
 import ro.itschool.repository.RoleRepository;
 import ro.itschool.service.ClientService;
 import ro.itschool.util.Constants;
+import ro.itschool.util.PasswordValidator;
 
 import java.util.Set;
 
-import static ro.itschool.util.Constants.REGISTER_PAGE;
-import static ro.itschool.util.Constants.REGISTER_SUCCESS_PAGE;
+import static ro.itschool.util.Constants.*;
 
 @Controller
 @RequiredArgsConstructor
@@ -38,6 +38,9 @@ public class RegisterController {
 
     @PostMapping(value = "/register")
     public String registerClient(@ModelAttribute("client") @RequestBody Client client) {
+        if (!PasswordValidator.isPasswordValid(client.getPassword())) {
+            return REGISTER_FAILED;
+        }
         if (client.getPassword().equals(client.getPasswordConfirm())) {
             client.setRoles(Set.of(roleRepository.findByName(Constants.ROLE_USER)));
             clientService.saveClient(client);
