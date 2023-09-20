@@ -25,10 +25,4 @@ public class Cart {
     @OneToOne (mappedBy = "cart")
     private Client client;
 
-   public void addProductToCart(Product p){
-       this.products.add(p);
-    }
-    public void removeProductFromCart(Product product) {
-        this.products.remove(product);
-    }
 }
